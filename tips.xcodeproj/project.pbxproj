@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A0ACB041CA5AC2B0060E603 /* UILaunchImageFile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 6A0ACB031CA5AC2B0060E603 /* UILaunchImageFile.jpg */; };
 		6A446D3D1C9B2AAA001B73FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A446D3C1C9B2AAA001B73FB /* AppDelegate.swift */; };
 		6A446D3F1C9B2AAA001B73FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A446D3E1C9B2AAA001B73FB /* ViewController.swift */; };
 		6A446D421C9B2AAA001B73FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A446D401C9B2AAA001B73FB /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A0ACB031CA5AC2B0060E603 /* UILaunchImageFile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = UILaunchImageFile.jpg; path = ../../UILaunchImageFile.jpg; sourceTree = "<group>"; };
 		6A446D371C9B2AAA001B73FB /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A446D3B1C9B2AAA001B73FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A446D3C1C9B2AAA001B73FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				6A446D3E1C9B2AAA001B73FB /* ViewController.swift */,
 				6A446D401C9B2AAA001B73FB /* Main.storyboard */,
 				6A446D431C9B2AAA001B73FB /* Images.xcassets */,
+				6A0ACB031CA5AC2B0060E603 /* UILaunchImageFile.jpg */,
 				6A446D451C9B2AAA001B73FB /* LaunchScreen.xib */,
 				6A446D3A1C9B2AAA001B73FB /* Supporting Files */,
 			);
@@ -156,11 +159,13 @@
 		6A446D2F1C9B2AA9001B73FB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Foster, Christopher S. (CONT)";
 				TargetAttributes = {
 					6A446D361C9B2AAA001B73FB = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 6SU4YC9XVF;
 					};
 					6A446D4B1C9B2AAA001B73FB = {
 						CreatedOnToolsVersion = 6.3;
@@ -194,6 +199,7 @@
 			files = (
 				6A446D421C9B2AAA001B73FB /* Main.storyboard in Resources */,
 				6A446D471C9B2AAA001B73FB /* LaunchScreen.xib in Resources */,
+				6A0ACB041CA5AC2B0060E603 /* UILaunchImageFile.jpg in Resources */,
 				6A446D441C9B2AAA001B73FB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +282,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -342,9 +349,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "design.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -352,9 +365,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "design.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -372,6 +391,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "design.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
@@ -387,6 +407,7 @@
 				);
 				INFOPLIST_FILE = tipsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "design.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/tips.app/tips";
 			};
@@ -411,6 +432,7 @@
 				6A446D581C9B2AAA001B73FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A446D591C9B2AAA001B73FB /* Build configuration list for PBXNativeTarget "tipsTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +441,7 @@
 				6A446D5B1C9B2AAA001B73FB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
